@@ -1,11 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import reactLogo from "/react.svg";
+import viteLogo from "/vite.svg";
+import jotaiLogo from "/jotai.png";
+import "./App.css";
+import { Jotai0 } from "./Jotai0.tsx";
+import { Jotai1 } from "./Jotai1.tsx";
+import { Jotai2 } from "./Jotai2.tsx";
+import { Jotai3 } from "./Jotai3.tsx";
+import { Jotai4 } from "./Jotai4.tsx";
+import { Suspense } from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div>
@@ -15,21 +19,20 @@ function App() {
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
+        <a href="https://jotai.dev" target="_blank">
+          <img src={jotaiLogo} className="logo jotai" alt="Jotai logo" />
+        </a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1>React + Jotai + Vite</h1>
+      {/*<Jotai0 />*/}
+      {/*<Jotai1 />*/}
+      {/*<Jotai2 />*/}
+      {/*<Jotai3 />*/}
+      <Suspense fallback={<div>Loading...</div>}>
+        <Jotai4 />
+      </Suspense>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
