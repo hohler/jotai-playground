@@ -24,13 +24,13 @@ function App() {
         </a>
       </div>
       <h1>React + Jotai + Vite</h1>
-      {/*<Jotai0 />*/}
+      <Jotai0 />
       {/*<Jotai1 />*/}
       {/*<Jotai2 />*/}
       {/*<Jotai3 />*/}
-      <Suspense fallback={<div>Loading...</div>}>
-        <Jotai4 />
-      </Suspense>
+      {/*<Suspense fallback={<div>Loading...</div>}>*/}
+      {/*  <Jotai4 />*/}
+      {/*</Suspense>*/}
     </>
   );
 }
