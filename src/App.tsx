@@ -13,14 +13,14 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
         <a href="https://jotai.dev" target="_blank">
           <img src={jotaiLogo} className="logo jotai" alt="Jotai logo" />
+        </a>
+        <a href="https://vite.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
       </div>
       <h1>React + Jotai + Vite</h1>
